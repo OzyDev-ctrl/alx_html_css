@@ -10,6 +10,19 @@
             width: 300px;
             height: auto;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
     </style>
 </head>
 <body>
@@ -54,17 +67,53 @@
 
             <!-- Fourth paragraph -->
             <p>This is a demonstration of how to include clickable images in a webpage, which is a useful feature for creating interactive and engaging web content.</p>
+
+            <!-- Container for the table of learners -->
+            <div class="learners-table">
+                <h3>Learners Information</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Country</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John</td>
+                            <td>25</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>Emily</td>
+                            <td>28</td>
+                            <td>Canada</td>
+                        </tr>
+                        <tr>
+                            <td>Michael</td>
+                            <td>32</td>
+                            <td>Australia</td>
+                        </tr>
+                        <tr>
+                            <td>Sophia</td>
+                            <td>21</td>
+                            <td>UK</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </article>
 
         <!-- Aside placeholder -->
         <aside>
-            <p>placeholder to add comment thread later</p>
+            <p>Placeholder to add comment thread later</p>
         </aside>
     </main>
 
     <!-- Footer with author credit -->
     <footer>
-        <p>Made by Ozy Amankwah - <a href="https://www.example.com" target="_blank">here</a></p>
+        <p>Made by Ozy Amankwah - <a href="https://www.example.com" target="_blank">here</a>.</p>
     </footer>
 </body>
 </html>

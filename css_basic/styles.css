@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Optional: Makes sure body takes the full viewport height */
+}
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto; /* Ensures main takes the remaining space */
+}
+article {
+  flex: 2; /* Takes up 2 parts */
+  overflow-y: auto; /* Allows vertical scrolling */
+}
+
+aside {
+  flex: 1; /* Takes up 1 part */
+  overflow-y: auto; /* Allows vertical scrolling */
+}
+header {
+  background-color: #333; /* Dark background for the header */
+  color: white; /* White text color */
+  padding: 10px; /* Add padding for spacing */
+}
+
+header ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Use flexbox for horizontal layout */
+  align-items: center; /* Center items vertically */
+}
+
+header li {
+  margin: 0 15px; /* Add spacing between items */
+}
+
+.logo {
+  font-size: 2em; /* Make the logo larger */
+  margin-right: 10px; /* Space between logo and other items */
+}

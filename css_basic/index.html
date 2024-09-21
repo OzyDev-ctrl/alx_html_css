@@ -11,6 +11,7 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            background-color: #f4f4f4; /* Light background color */
         }
         header {
             background: #333;
@@ -35,6 +36,11 @@
         }
         .project {
             margin-bottom: 20px;
+            background: white; /* White background for projects */
+            padding: 15px; /* Padding for project sections */
+            border: 1px solid #ccc; /* Light border */
+            border-radius: 5px; /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
         }
         footer {
             background: #333;
@@ -45,6 +51,10 @@
             width: 100%;
             bottom: 0;
         }
+        .logo {
+            font-size: 2em; /* Increase logo size */
+            margin-right: 10px; /* Space between logo and text */
+        }
     </style>
 </head>
 <body>
@@ -52,17 +62,16 @@
     <header>
         <h1>Ozy Amankwah</h1>
         <p>Passionate Full-Stack Developer & Travel Enthusiast</p>
+        <nav>
+            <ul>
+                <li class="logo">💻 OA</li> <!-- Logo using Unicode -->
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
     <!-- Introduction Section -->
     <section id="introduction">

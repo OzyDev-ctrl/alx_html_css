@@ -1,0 +1,606 @@
+/* Styles for the entire header */
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+body {
+  background: radial-gradient(85.9% 85.9% at 50% 14.1%, rgba(41, 48, 61, 0) 0%, #071629 100%), url('images/background.jpg');
+  background-blend-mode: normal, color;
+  background-image: url(../assets/images/Object.png);
+  background-size: cover;
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: right center; /* Move the image to the right */
+  height: 1200px;
+  width: 1448.15px;
+  flex-shrink: 0;
+  margin: 0;
+  color: #FFF;
+  font-family: "Source Sans Pro";
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: transparent; /* Since the navbar lies on the background image */
+}
+
+.navbar img {
+  height: 30px; /* Adjust based on Figma */
+  width: 167.016px; 
+  flex-shrink: 0;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 52px;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white; /* Adjust color from Figma */
+  font-size: 12px; /* Adjust based on Figma */
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.first-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.first-section h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Source Sans Pro";
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal; 
+  margin-bottom: 20px;
+  margin-top: 286px;
+}
+
+.first-section .spans-container {
+  display: flex;
+  gap: 59px;
+  margin-top: 10px;
+}
+.first-section span {
+  color: #FFF;
+text-align: center;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.register-btn {
+  margin-top: 38px;
+  border-radius: 22px;
+  background-color: #C271FF;
+  width: 170px;
+  height: 44px;
+  flex-shrink: 0;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+  /* Text styling */
+  font-size: 14px; /* Font size of the text inside the button */
+  font-weight: 600; /* Make the text bold */
+  text-transform: uppercase; /* Make text all uppercase */
+  text-align: center; /* Center the text inside the button */
+  font-family: "Source Sans Pro";
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-btn:hover {
+  background-color: #b45bf4;
+}
+
+.learn-from-pros {
+  text-align: center;
+  margin-top: 168px;
+}
+
+.learn-from-pros h2 {
+  font-family: "Source Sans Pro";
+  font-size: 32px;
+  line-height: normal;
+}
+
+.learn-from-pros .learn {
+  color: #C271FF;
+text-align: center;
+font-family: "Source Sans Pro";
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.learn-from-pros h2 {
+  color: #FFF;
+  font-family: "Source Sans Pro";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.profile-grid {
+  display: flex;
+  justify-content: space-between; /* Adjusts space between profiles */
+  flex-wrap: wrap; /* Ensures profiles wrap on smaller screens */
+  padding: 20px 0; /* Optional padding for spacing */
+  margin-top: 87px;
+  gap: 139px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column; /* Stack image, name, and description vertically */
+  align-items: center; /* Center-aligns content */
+  text-align: center;
+  width: 150px; /* Adjust the width of each profile card */
+  height: 150px;
+  flex-shrink: 0;
+}
+
+.profile img {
+  width: 100px; /* Adjusts the size of the profile image */
+  height: 100px;
+  border-radius: 50%; /* Makes the images circular */
+}
+
+.profile h3 {
+  font-family: "Source Sans Pro";
+  width: 150px;
+  font-size: 18px;
+  font-weight: 900;
+  color: #FFF;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 27px;
+}
+
+.profile p {
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  color: #FFF;
+  line-height: 24px;
+  margin-top: 1px;
+}
+
+.testimonial-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #C271FF;
+  width: 1640px;
+  height: 392px;
+  padding: 20px;
+  flex-shrink: 0;
+  margin-bottom: 110px;
+  margin-top: 70px;
+}
+
+.testimonial-image img {
+  width: 394px; /* Set image width */
+  height: 341px; /* Set image height */
+  flex-shrink: 0; /* Prevent image from shrinking */
+
+  width: 160px;
+  height: 160px;
+  flex-shrink: 0;
+  margin-left: 260px;
+  margin-bottom: 124px;
+
+}
+
+.testimonial-text {
+  max-width: 730px; /* Limit the max width for text content */
+  color: #FFF; /* Text color */
+  margin-right: 710px;
+  margin-bottom: 214px;
+  margin-top: 110px;
+}
+
+.testimonial-text blockquote {
+  font-size: 22px; /* Font size for the blockquote */
+  font-weight: 400; /* Font weight */
+  margin: 0; /* Remove default margins */
+  line-height: 33.6px; /* Line height for readability */
+  color: #FFF;
+  width: 730px;
+  padding: 20px;
+}
+.testimonial-text h3 {
+  font-size: 22px; /* Font size for name */
+  font-weight: 700; /* Font weight for name */
+  margin:0px; /* Margin above the name */
+  margin-left: 30px;
+  line-height: 33.6px;
+}
+
+.testimonial-text p {
+  font-size: 22px; /* Font size for the description */
+  line-height: 33.6px;
+  font-weight: 400; /* Font weight for the description */
+  margin: 0px; /* Margin above the description */
+  margin-left: 30px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+/* Section styling for 'Most Popular Tutorials' */
+.popular-tutorials {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Styling for the section title */
+.popular-tutorials h2 {
+  font-family: "Source Sans Pro";
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 300;
+}
+
+/* Specific styling for each word in the title */
+.popular-tutorials h2 .most {
+  color: #071629;
+  margin-right: 10px; /* Add space between 'Most' and 'Popular' */
+}
+
+.popular-tutorials h2 .popular {
+  color: #c271ff;
+  font-weight: 700;
+  margin-right: 10px; /* Add space between 'Popular' and 'Tutorials' */
+}
+
+.popular-tutorials h2 .tutorials {
+  color: #071629;
+}
+
+.tutorials-title {
+  color: #071629; /* Title color */
+  text-align: left; /* Center the title */
+  font-family: "Source Sans Pro"; /* Font family */
+  font-size: 16px; /* Font size */
+  font-weight: 700; /* Font weight */
+  line-height: normal;
+  margin-bottom: 10px; /* Spacing below the title */
+  margin-left: 13px;
+}
+
+.tutorial-grid {
+  display: flex; /* Flexbox layout for the grid */
+  justify-content: center; /* Center the grid items */
+  flex-wrap: wrap; /* Allow items to wrap */
+  gap: 40px; /* Space between cards */
+}
+
+.tutorial-card {
+  position: relative; /* Positioning for the play icon */
+  background-color: #fff; /* Background color for card */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(7,22, 41, 0.18); /* Shadow effect */
+  width: 255px; /* Card width */
+  height: 355px;
+  flex-shrink: 0;
+  padding: 3px; /* Inner padding */
+  text-align: center; /* Center text in the card */
+}
+
+.tutorial-image {
+  width: 100%; /* Full width of the card */
+  height: auto; /* Auto height to maintain aspect ratio */
+  border-radius: 8px; /* Match card rounding */
+}
+
+.play-icon {
+  position: absolute; /* Positioning on top of the tutorial image */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -500%); /* Adjust for centering */
+  width: 24px; /* Adjust size */
+  height: 24px; /* Adjust size */
+}
+
+.instructor {
+  display: flex; /* Flexbox for instructor layout */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  margin-top: 10px; /* Spacing above instructor section */
+}
+
+.instructor-image {
+  width: 30px; /* Instructor image size */
+  height: 30px; /* Instructor image size */
+  flex-shrink: 0;
+  border-radius: 50%; /* Circular image */
+  margin-right: 20px; /* Space between image and name */
+  margin-left: 13px;
+}
+
+.instructor h4 {
+  font-size: 14px; /* Set font size for instructor name */
+  color: #C271FF; /* Color for the instructor name */
+  font-style: normal;
+  margin: 0; /* Remove default margins */
+  font-weight: 600;
+  line-height: 27px;
+  margin-right: 90px;
+}
+
+.rating {
+  width: 107px; /* Set width for rating image */
+  height: 15px; /* Auto height */
+  flex-shrink: 0;
+  margin: 30px 0; /* Space around rating */
+  margin-left: 20px;
+  
+}
+
+p {
+  font-family: "Source Sans Pro"; /* Font family for paragraphs */
+  width: 242px;
+  font-size: 14px; /* Font size for paragraph text */
+  color: rgb(7, 22,41, 0.50); /* Text color */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin-left: 13px;
+}
+
+.duration {
+  font-size: 14px; /* Set a smaller font size for duration */
+  text-align: right;
+  font-style: normal;
+  font-weight: 600;
+  color: #C271FF; /* Set a lighter color for duration */
+  line-height: 27px;
+  margin: 5px;
+  margin-top: -55px;
+  margin-left: -22px;
+}
+
+.membership-section {
+  display: flex;
+  flex-direction: column; /* Stack the header and cards vertically */
+  align-items: center; /* Center align the content */
+  background-color: #071629; /* Background color */
+  width: 1650px; /* Width */
+  height: auto; /* Height should be auto to fit content */
+  flex-shrink: 0; /* Prevent shrinking */
+  padding: 20px; /* Add some padding */
+}
+
+.membership-section h2 {
+  color: #FFF; /* Text color for the heading */
+  font-size: 32px; /* Font size */
+  margin-bottom: 58px; /* Margin below the heading */
+}
+
+.free {
+  color: #C271FF; /* Color for "Free" */
+  text-align: center;
+  font-family: "Source Sans Pro";
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.membership {
+  color: #FFF; /* Color for "membership" */
+  font-family: "Source Sans Pro";
+  text-align: center;
+  font-weight: 700;
+}
+
+.membership-cards-container {
+  display: flex; /* Use flexbox to display cards in a row */
+  flex-wrap: wrap; /* Allow cards to wrap onto the next line */
+  justify-content: center; /* Center the cards */
+  width: 100%; /* Full width */
+}
+
+.membership-card {
+  display: flex;
+  flex-direction: column; /* Stack the image and text vertically */
+  align-items: center; /* Center align items */
+  background-color: #071629; /* Background color for each card */
+  padding: 10px; /* Padding inside the card */
+  border-radius: 5px; /* Rounded corners for the card */
+  margin: 10px; /* Space around cards */
+  width: 256px; /* Set a fixed width for the card */
+  height: 153px;
+  flex-shrink: 0;
+  gap: 30px;
+}
+
+.membership-card img {
+  width: 43.666px; /* Adjust image size */
+  height: 35.353px; /* Adjust image size */
+  margin-bottom: 10px; /* Space below image */
+  flex-shrink: 0;
+}
+
+.membership-card h3 {
+  color: #FFF; /* Heading color */
+  font-size: 18px; /* Font size */
+  margin: 0; /* Remove default margins */
+  text-align: center; /* Center text */
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+
+}
+
+.membership-card p {
+  color: #FFF; /* Paragraph color */
+  font-size: 14px; /* Font size */
+  margin: 0; /* Remove default margins */
+  text-align: center; /* Center text */
+  width: 212px;
+  font-family: "Source Sans Pro";
+  font-size: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin: -13px;
+}
+
+.register-button {
+  background-color: #C271FF; /* Button background color */
+  color: #FFF; /* Button text color */
+  font-size: 12px; /* Font size for button */
+  font-weight: 600; /* Font weight */
+  padding: 10px 20px; /* Padding inside the button */
+  border: none; /* Remove border */
+  border-radius: 22px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-top: 85px; /* Space above the button */
+  margin-bottom: 52px;
+  height: 44px;
+  width: 170px;
+}
+
+.register-button:hover {
+  background-color: #A45ED7; /* Change button color on hover */
+}
+
+.faq-section {
+  background-color: #FFFFFF; /* White background for the section */
+  color: #000000; /* Text color for black */
+  padding: 20px; /* Padding for the section */
+  text-align: center; /* Center align the FAQ heading */
+}
+
+.faq-section h2 {
+  font-size: 60px; /* Font size for section heading */
+  margin-bottom: 20px; /* Space below the heading */
+  font-family: "Source Sans Pro";
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.faq-content {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping of items */
+  justify-content: center; /* Center align the items */
+  max-width: 800px; /* Maximum width for the content */
+  margin: 10px auto; /* Center align content */
+  gap: 100px; /* Space between items */
+}
+
+.faq-item {
+  background-color: #ffffff; /* Light background color for each item */
+  padding: 15px; /* Padding inside each item */
+  border-radius: 10px; /* Rounded corners for the items */
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  flex: 1 1 300px; /* Allow flex items to grow and shrink */
+  min-width: 250px; /* Minimum width for each item */
+}
+
+.faq-item h3 {
+  font-size: 16px; /* Font size for questions */
+  color: #071629; /* Color for questions */
+  margin: 0; /* Remove default margins */
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 100px;
+}
+
+.faq-item p {
+  font-size: 14px; /* Font size for answers */
+  color: rgba(7, 21, 39, 0.50); /* Color for answers */
+  margin-top: 5px; /* Space above answers */
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  width: 250px;
+  margin-left: 30px;
+}
+
+.footer {
+  background-color: #071629; /* Footer background color */
+  color: #FFF; /* Text color */
+  padding: 20px; /* Padding for footer */
+  width: 1640px;
+  height: 249px;
+}
+
+.footer-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out logo and social icons */
+  align-items: center; /* Center align items vertically */
+  max-width: 1200px; /* Max width for the footer content */
+  margin: 0 auto; /* Center the container */
+}
+
+.logo {
+  max-width: 150px; /* Adjust logo size */
+  position: relative;
+  right: 165px;
+  margin-top: 124px;
+}
+
+.social-icons {
+  display: flex; /* Use flexbox to align icons if you have multiple */
+}
+
+.social-icons img {
+  width: 130px; /* Adjust icon size */
+  height: 30px; /* Maintain aspect ratio */
+  margin-left: 90px; /* Space between icons */
+  flex-shrink: 0;
+  margin-top: 129px;
+  position: relative;
+  left: 80px;
+}
+
+.footer-text {
+  text-align: center; /* Center align text */
+  margin-top: 85px; /* Space between icons and text */
+  color: #FFF;
+  font-family: "Source Sans Pro";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.3517;
+  margin-left: 672px;
+}

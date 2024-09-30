@@ -1,119 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Updated HTML Page</title>
+    <meta charset="utf-8">
+    <title>Ozy Amankwah - Personal Portfolio</title>
     <style>
-        .responsive-image {
-            width: 300px;
-            height: auto;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
         }
-        table {
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        .project {
+            margin-bottom: 20px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
             width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
-    <!-- Header with navigation links -->
+    <!-- Header -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="tweets.html">Tweets</a></li>
-            </ul>
-        </nav>
+        <h1>Ozy Amankwah</h1>
+        <p>Passionate Full-Stack Developer & Travel Enthusiast</p>
     </header>
 
-    <!-- Main content -->
-    <main>
-        <article>
-            <!-- Level 1 heading -->
-            <h1>Welcome to My Portfolio</h1>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-            <!-- Level 2 heading -->
-            <h2>About the Project</h2>
+    <!-- Introduction Section -->
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Hello! I am Ozy Amankwah, a passionate web developer with a love for technology and travel. I specialize in creating dynamic and responsive web applications.</p>
+    </section>
 
-            <!-- First paragraph -->
-            <p>This project is designed to showcase my skills in HTML, CSS, and web development. It includes various components such as headings, paragraphs, and images.</p>
-
-            <!-- Link to Tweets Page -->
-            <p><a href="tweets.html">Check out my latest tweets</a></p>
-
-            <!-- Level 3 heading -->
-            <h3>Project Details</h3>
-
-            <!-- Second paragraph -->
-            <p>I am currently working on a simple portfolio website to demonstrate basic HTML structure. This site will continue to evolve as I add more features and improve its design.</p>
-
-            <!-- Third paragraph -->
-            <p>Below, you will find an image that links to my favorite website. Click on the image to be taken to that website.</p>
-
-            <!-- Clickable image with CSS class -->
-            <a href="https://www.example.com" target="_blank">
-                <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="ALX Logo" class="responsive-image">
-            </a>
-
-            <!-- Fourth paragraph -->
-            <p>This is a demonstration of how to include clickable images in a webpage, which is a useful feature for creating interactive and engaging web content.</p>
-
-            <!-- Container for the table of learners -->
-            <div class="learners-table">
-                <h3>Learners Information</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Age</th>
-                            <th>Country</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>John</td>
-                            <td>25</td>
-                            <td>USA</td>
-                        </tr>
-                        <tr>
-                            <td>Emily</td>
-                            <td>28</td>
-                            <td>Canada</td>
-                        </tr>
-                        <tr>
-                            <td>Michael</td>
-                            <td>32</td>
-                            <td>Australia</td>
-                        </tr>
-                        <tr>
-                            <td>Sophia</td>
-                            <td>21</td>
-                            <td>UK</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <article class="project">
+            <h3>Vet Pet Hub</h3>
+            <p>A veterinary app that connects vet doctors to pet owners, providing a platform for consultation and pet care.</p>
+            <a href="https://github.com/CtrlOzydev/Vet-Pet-Hub" target="_blank">View Project</a>
         </article>
+        <article class="project">
+            <h3>Personal Portfolio</h3>
+            <p>This portfolio website to showcase my skills, projects, and contact information.</p>
+            <a href="#" target="_blank">View Project</a>
+        </article>
+    </section>
 
-        <!-- Aside placeholder -->
-        <aside>
-            <p>Placeholder to add comment thread later</p>
-        </aside>
-    </main>
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I have a background in agriculture and a passion for web development. My skills include front-end technologies like HTML, CSS, and JavaScript, as well as back-end technologies.</p>
+        <p>In my spare time, I enjoy traveling and exploring new places, which inspires many of my projects and designs.</p>
+    </section>
 
-    <!-- Footer with author credit -->
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:ozy.amankwah@example.com">ozy.amankwah@example.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/ozyamankwah" target="_blank">LinkedIn Profile</a></p>
+        <p>GitHub: <a href="https://github.com/CtrlOzydev" target="_blank">GitHub Profile</a></p>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>Made by Ozy Amankwah - <a href="https://www.example.com" target="_blank">here</a>.</p>
+        <p>&copy; 2024 Ozy Amankwah</p>
     </footer>
 </body>
 </html>

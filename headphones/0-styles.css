@@ -1,0 +1,176 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --primary-color: #C271FF;
+  --secondary-color: #071629;
+  --hover-color: #FF6565;
+  --font-family: 'Source Sans Pro', sans-serif;
+  --font-size-large: 2.5rem;
+  --font-size-medium: 1.2rem;
+}
+
+/* General styling */
+body {
+  font-family: var(--font-family);
+  color: white;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../assets/headphonesimg/headphones_hero_1.jpg'); /* Adjust the path to your image */
+  background-size: cover; /* Cover the entire header */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  height: 100vh; /* Full-screen height */
+  position: relative; /* Set position for absolute elements */
+}
+
+/* Navbar Styling */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: absolute; /* Position navbar absolutely within the header */
+  top: 0; /* Align to the top of the header */
+  z-index: 10; /* Ensure it is above other content */
+}
+
+.navbar img {
+  width: 161px;
+  height: 32px;
+  flex-shrink: 0;
+  margin-left: 200.61px;
+  margin-top: 27.76px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 41px;
+  margin-top: 37px;
+  margin-right: 199px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  transition: color 0.3s ease;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.nav-links li a:hover,
+.nav-links li a:active {
+  color: var(--hover-color);
+}
+
+/* Hero Section Styling */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 20px; /* Adjust padding for hero content */
+  z-index: 5; /* Ensure hero content is above background but below navbar */
+}
+
+.hero-content {
+  width: 637px; /* Max width for content */
+  padding: 20px; /* Some padding for content */
+  z-index: 5; /* Ensure content is above background */
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 320px;
+  width: 578px;
+  height: 40px;
+}
+
+.hero p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: "Source Sans Pro, sans serif";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 20px;
+}
+
+.hero-content p {
+  margin-bottom: 20px; 
+  font-size: 16px; 
+  color: #fff; 
+  line-height: 20px; 
+  width: 627px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  margin-top: 10px;
+  font-weight: 400;
+  font-family: "Source Sans Pro, sans serif";
+  
+}
+
+.hero button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #FF6565;
+  width: 162px;
+  height: 44px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 22px;
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Source Sans Pro";
+  cursor: pointer;
+  margin-bottom: 65px;
+  margin-top: 40px;
+  transition: opacity 0.3s ease; /* Smooth transition for hover */
+}
+
+.hero button:hover,
+.hero button:active {
+  opacity: 0.9; /* Change opacity on hover */
+}
+
+/* Responsive for smaller screens */
+@media screen and  (max-width: 480px) {
+  .hero {
+    padding: 50px 10px; 
+  }
+
+  .hero h1 {
+    font-size: 1.8rem; /* Smaller font size for mobile */
+  }
+
+  .hero p {
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack nav links vertically */
+    gap: 10px;
+  }
+}
